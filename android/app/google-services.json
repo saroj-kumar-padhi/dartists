@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "219378278027",
+    "project_id": "dartists-1b863",
+    "storage_bucket": "dartists-1b863.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219378278027:android:091b916e851d6f0a4d7e8e",
+        "android_client_info": {
+          "package_name": "com.example.dartists"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219378278027-i5l5u0rcn6uul9h88lioadion77l9tag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dartists",
+            "certificate_hash": "be627b4f335db872257e4c58f32cfe80de49d96e"
+          }
+        },
+        {
+          "client_id": "219378278027-bv5128hvgl6gd5lo341tjouqmpko6kcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPcyEYDg363JMJAsFJ-NtjbEI4D6fstrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219378278027-bv5128hvgl6gd5lo341tjouqmpko6kcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
