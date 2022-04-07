@@ -1,3 +1,5 @@
+import 'package:dartists/priviews/contrsted_image.dart';
+import 'package:dartists/priviews/exapanded.dart';
 import 'package:dartists/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -57,14 +59,24 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Tiny Coders",
-          style: GoogleFonts.poppins(),
+      drawer: Drawer(
+        backgroundColor: Colors.redAccent[200],
+        child: Stack(
+          children: [
+            tiles(),
+          ],
         ),
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.menu),
+      ),
+      appBar: AppBar(
+        backgroundColor: Colors.redAccent[200],
+        toolbarHeight: 60,
+        elevation: 14,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(20),
+                bottomLeft: Radius.circular(20))),
+        title: Text(
+          'Dartists',
         ),
       ),
       body: Column(children: [
@@ -104,12 +116,18 @@ class _MyHomePageState extends State<MyHomePage>
                   ),
                   Container(
                     height: 200,
-                    child: ListView.builder(
-                      shrinkWrap: true,
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 5,
-                      itemBuilder: (context, index) => ImageCard(
-                          "assets/images/${categories[controller!.index]}/${index + 1}.jpg"),
+                    child: InkWell(
+                      onTap: () {
+                        Get.to(expanded_image(
+                            "assets/images/${categories[controller!.index]}/${index + 1}.jpg"));
+                      },
+                      child: ListView.builder(
+                        shrinkWrap: true,
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 5,
+                        itemBuilder: (context, index) => ImageCard(
+                            "assets/images/${categories[controller!.index]}/${index + 1}.jpg"),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -127,12 +145,18 @@ class _MyHomePageState extends State<MyHomePage>
                   ),
                   Container(
                     height: 200,
-                    child: ListView.builder(
-                      shrinkWrap: true,
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 5,
-                      itemBuilder: (context, index) => ImageCard(
-                          "assets/images/${categories[controller!.index]}/${index + 1}.jpg"),
+                    child: InkWell(
+                      onTap: () {
+                        Get.to(expanded_image(
+                            "assets/images/${categories[controller!.index]}/${index + 1}.jpg"));
+                      },
+                      child: ListView.builder(
+                        shrinkWrap: true,
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 5,
+                        itemBuilder: (context, index) => ImageCard(
+                            "assets/images/${categories[controller!.index]}/${index + 1}.jpg"),
+                      ),
                     ),
                   ),
                 ],

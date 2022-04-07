@@ -19,7 +19,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     onReady();
     return Scaffold(
-      backgroundColor: Colors.redAccent[200],
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -28,7 +28,7 @@ class SplashScreen extends StatelessWidget {
               height: 15,
             ),
             Image.asset(
-              "assets/images/Adventure/1.jpg",
+              "assets/images/logo.jpeg",
               height: 300,
               width: 300,
             ),
